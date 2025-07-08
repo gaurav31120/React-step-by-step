@@ -1,0 +1,15 @@
+1 How React Works:
+You can write HTML code inside JavaScript using JSX.
+React renders everything properly in the browser.
+
+
+2 Why Should Component Names Start With a Capital Letter?
+Because React treats lowercase tags like HTML elements (e.g., <div>, <h1>), and uppercase tags as custom React components.
+
+
+3 Return Must Have a Single Parent Tag
+All JSX returned by a component must be wrapped inside a single parent element like a <div> or a fragment <> </>.
+
+4 Library vs Framework
+Library: You control the flow (e.g., React).
+Framework: The framework controls the flow; you just follow its structure (e.g., Angular).

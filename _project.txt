@@ -2,3 +2,4 @@ Here, I will put all code in sequence.
 
 1 Create react app with vite
 2 Creating a component in app.jsx
+3 First React Component (component vs function)

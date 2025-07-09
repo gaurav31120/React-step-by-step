@@ -1,12 +1,28 @@
 import Header from "./Header";
 
 function App() {
+  // alert(sum())
   return (
     <>
       <Header />
-      <h1>Hello</h1>
+      <h1>First Component {sum() }</h1>
+      <Fruit />
     </>
   );
+}
+
+function Fruit() {  // This is a component
+
+  
+  return (
+    <>
+    <h1>Apple</h1>
+    </>
+  )
+}
+
+function sum() {       // This is a function
+  return 10+10
 }
 
 export default App;

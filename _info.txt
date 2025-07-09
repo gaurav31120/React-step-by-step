@@ -4,3 +4,18 @@ code step by step channel and make notes.
 https://youtube.com/playlist?list=PL8p2I9GklV463WUKdVzUZ17IDZ3SwoSTu&si=DWaoLSft9Hc87FfT
 
 https://youtu.be/LuNPCSNr-nE?si=aT38nS_T1Xrjlxea
+
+What we will learn in React JS:
+
+Setup
+Basics
+Hooks
+Form handling
+Routing
+API calls
+Advanced concepts
+React 19 features
+Redux
+Mini Project
+Tailwind with react
+Main Project

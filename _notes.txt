@@ -1,15 +1,241 @@
-1 How React Works:
+1 What is React JS
+React is JavaScript Library
+Use to make web front-end application
+With React we make SPA (Single Page Application)
+Example: Facebook = SPA | NASA’s website = Multi-page app.
+
+2 Why Learn React?
+Fast because of virtual DOM
+Easy to learn
+Learning curve is also less compare other UI technology.
+Hight demand and a lots of Job in market.
+Large community
+
+3 More About React
+Develop by Facebook
+Current version is 18.3.1
+RC version 19
+After React you can easily learn React Native also for mobile development
+
+---------------------------------------------------
+4 React software installation and setup
+
+Install Node.js
+Go to nodejs.org
+Download the LTS (Long Term Support) version
+Complete the installation
+
+
+Verify installation:
+Open your terminal and run:
+
+node -v
+npm -v
+
+
+Install VS Code
+Download from code.visualstudio.com
+
+This is where you’ll write and run all your React code.
+
+
+
+Install Vite
+Why Vite?
+Officially recommended by React docs
+Super fast dev server 🚀
+Cleaner build process
+Supports TypeScript, CSS modules, pre-processors, and more!
+
+
+Go to vite.dev
+
+
+
+Install Vite via Terminal:
+
+npm create vite@latest
+
+
+Follow the prompts:
+Project Name – Type your desired project name
+Select Framework – Choose React
+Variant – Select JavaScript
+Hit Enter!
+
+
+Install Node Modules
+
+
+Once Vite setup is done, run:
+
+npm install
+
+
+Open Project in VS Code
+
+code .
+This opens your project directly in VS Code.
+
+
+
+Run the React App
+
+npm run dev
+Your project should now run on localhost:5173 (Vite’s default port).
+
+
+-----------------------------------------------------
+
+5 How React Works:
 You can write HTML code inside JavaScript using JSX.
 React renders everything properly in the browser.
 
 
-2 Why Should Component Names Start With a Capital Letter?
+6 Why Should Component Names Start With a Capital Letter?
 Because React treats lowercase tags like HTML elements (e.g., <div>, <h1>), and uppercase tags as custom React components.
 
 
-3 Return Must Have a Single Parent Tag
+7 Return Must Have a Single Parent Tag
 All JSX returned by a component must be wrapped inside a single parent element like a <div> or a fragment <> </>.
 
-4 Library vs Framework
+8 Library vs Framework
 Library: You control the flow (e.g., React).
 Framework: The framework controls the flow; you just follow its structure (e.g., Angular).
+
+9 Most important file in a React project
+It contains:
+
+Project name, version, and metadata
+Build commands and scripts
+Dependencies and devDependencies
+
+10 Difference Between Dependencies and DevDependencies
+
+Dependencies
+Required for running the project (e.g., React, ReactDOM)
+dependencies --> dependencies wo library hoti jinke upar aapka project run karta hai.
+
+
+
+DevDependencies
+Required only during development (e.g., ESLint, Vite, Babel)
+These packages are downloaded and stored inside the node_modules folder.
+dev-dependencies --> development dependencies --> jinki wajah se aap development kar pa rahe ho
+
+11 package-json vs package-lock.json
+package-json --> project ki details hoti hain
+not exact version
+
+package-lock.json --> project ki nested details hoti hain
+
+It stores the exact version of each installed dependency.
+Contains a nested structure of dependencies.
+Helps ensure consistent installs across different machines.
+
+12 README.md
+A documentation file about your project.
+Commonly includes:
+Project purpose
+How to install and run
+Author info, etc.
+
+13 vite.config.js
+Contains configuration settings for Vite (the build tool).
+Used to set aliases, plugins, ports, etc.
+
+14 eslint.config.js
+Contains ESLint rules (JavaScript code standards)
+Helps with code quality and linting
+
+15 .gitignore
+Lists files and folders that should not be pushed to Git (e.g., node_modules, .env, dist, etc.)
+
+16 Project Files Overview
+
+index.html
+Browser's entry point (root <div> is here)
+
+main.jsx	
+React/JS entry point; renders the <App /> component
+
+App.jsx
+Main React component
+
+App.css, index.css
+Styling files for components and global styles
+
+Best Practices
+Create React components inside the src/components folder
+If something is meant for public access (like images, favicon, etc.), use the public folder.
+For assets used internally (like logos, icons, CSS files), use an assets folder inside src.
+
+node_modules
+Contains all installed libraries and packages
+Automatically created when you run npm install or yarn install
+
+
+17 Why Should You Not Push node_modules to Git?
+It is very large in size
+Other developers can simply run npm install to recreate it from package.json
+
+18 What is a Component?
+In React, a component is a small, reusable part of the UI (User Interface).
+
+Think of a component as a building block of your app.
+
+Example:
+If your project is a car, its components would be:
+
+Tyres
+
+Engine
+
+Doors
+
+Gearbox
+
+
+
+Similarly, in a React project:
+The header, button, footer, or form field can be components.
+
+
+
+19 Nested Components
+A component can contain other smaller components inside it.
+
+For example: A Form component may include an Input component and a Button component
+
+
+
+20 Role of Components in React
+Every part of the UI in React is made using components.
+Components can be reused throughout the app.
+They make the code modular, readable, and easy to maintain.
+
+
+Rules for Writing Components
+Always start component names with a Capital Letter.
+Components must return a single parent tag.
+Use <div>...</div> or <>...</> (React Fragment).
+
+
+You can use a component like an HTML tag:
+<Fruit />
+<Color></Color>
+
+21 Component vs Normal Function
+Normal Function
+Can start with lowercase
+Executes JavaScript logic
+Called like myFunction()
+Any data type
+
+
+22 React Component
+Must start with a Capital Letter
+Returns JSX (UI)
+Used like <MyComponent />
+Returns JSX (HTML-like)
+

@@ -1,4 +1,5 @@
 import Header from "./Header";
+import JsxInReact from "./JsxInReact";
 
 function App() {
   // alert(sum())
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <h1>First Component {sum() }</h1>
       <Fruit />
+      <JsxInReact />
     </>
   );
 }

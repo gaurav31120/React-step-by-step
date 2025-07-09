@@ -5,3 +5,4 @@ Here, I will put all code in sequence.
 3 First React Component (component vs function)
 4 Importing and Exporting Components in React
 5 Jsx in React
+6 JSX with Curly Braces

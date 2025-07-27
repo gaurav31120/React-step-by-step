@@ -1,3 +1,4 @@
+import ClickEvent from "./ClickEventAndFunctionCall";
 import Header from "./Header";
 import JsxInReact from "./JsxInReact";
 
@@ -37,6 +38,7 @@ function App() {
   return (
     <>
     <div>
+    <ClickEvent/>
     <h1>Jsx with curly braces</h1>
     <h1>{name?name:"user not found"}</h1>
     <h1>{x+y}</h1>

@@ -6,3 +6,4 @@ Here, I will put all code in sequence.
 4 Importing and Exporting Components in React
 5 Jsx in React
 6 JSX with Curly Braces
+7 Click Event and Function call

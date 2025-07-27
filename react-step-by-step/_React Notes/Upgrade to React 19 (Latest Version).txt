@@ -1,0 +1,55 @@
+8 Upgrade to React 19 (Latest Version)
+--------------------------------------
+
+Why Should You Update Your React Version?
+Upgrading your React project ensures:
+
+Better performance
+Access to new features and functionalities
+Bug fixes and improved stability
+
+
+As of now:
+Current Stable Version: 18.3.1
+
+React 19 (RC): React 19 is in Release Candidate (RC) phase. That means it’s almost ready for final release but available for early use.
+
+
+
+Check Your Current React Version
+To see what version of React you’re currently using:
+
+Open your project folder.
+Open the package.json file.
+Look under the "dependencies" section:
+"dependencies": {
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1"
+}
+
+
+18 = Major release
+
+3 = Minor update
+
+1 = Patch (bug fixes)
+
+
+
+How to Upgrade to React 19 (RC)
+
+
+Open your terminal in your project root.
+
+Run this command to install the RC version:
+
+npm install react@rc react-dom@rc
+This will install the Release Candidate versions of both react and react-dom.
+
+We can use this command also to install latest version of react and react dom:
+npm install --save-exact react@rc react-dom@rc
+
+Test Your Project
+After upgrading, test if everything works fine:
+
+npm run dev

@@ -1,4 +1,4 @@
-32 Click Event and Function call
+7 Click Event and Function call
 
 Difference Between JavaScript and React Function Calls
 HTML Example:

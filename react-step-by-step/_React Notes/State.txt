@@ -1,0 +1,116 @@
+9 State
+--------------------
+
+When working with React JS, managing dynamic data is an essential part of building interactive applications. Let’s understand how state works and how to use it effectively using useState.
+
+
+
+State in react js
+State is like a variable but smarter.
+It stores dynamic data and automatically re-renders the component whenever the state changes.
+React does not understand normal JavaScript variables for UI updates.
+If you want to update and reflect values in the UI, use state.
+
+
+State = Data Container
+State is mutable (it can change).
+
+It allows React components to keep track of data that changes over time.
+
+React will automatically update the UI when the state value changes.
+
+
+
+Hooks in React
+Hooks are special functions that let you use React features in functional components.
+
+With hooks, you can use:
+
+State (useState)
+Lifecycle methods (useEffect)
+Other advanced features
+
+
+How to Use useState
+import { useState } from "react";
+
+
+Use useState in Your Component
+function App() {
+  const [fruit, setFruit] = useState("Apple");
+
+  const handleFruit = () => {
+    setFruit("Banana");
+  };
+
+  return (
+    <div>
+      <h1>State in React JS</h1>
+      <h2>{fruit}</h2>
+      <button onClick={handleFruit}>Change Fruit Name</button>
+    </div>
+  );
+}
+
+
+Explanation:
+fruit is the current value.
+setFruit is the function to update the value.
+Clicking the button changes "Apple" to "Banana" and updates the UI.
+
+
+Using State in a Different Component
+Create a New Component (e.g., Counter.jsx)
+import React, { useState } from "react";
+
+const Counter = () => {
+  const [counter, setCounter] = useState(0);
+
+  return (
+    <div>
+      <h1>Counter: {counter}</h1>
+      <button onClick={() => setCounter(counter + 1)}>Update Counter</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+Import It in App.jsx
+import Counter from "./Counter";
+
+function App() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+Multiple States in One Component
+import React, { useState } from "react";
+
+const Counter = () => {
+  const [counter, setCounter] = useState(0);
+  const [rCounter, setRCounter] = useState(10);
+
+  return (
+    <div>
+      <h1>Counter: {counter}</h1>
+      <h1>R Counter: {rCounter}</h1>
+      <button onClick={() => setCounter(counter + 1)}>Update Counter</button>
+      <button onClick={() => setRCounter(rCounter - 1)}>Update R Counter</button>
+    </div>
+  );
+};
+
+export default Counter;
+useState lets you manage dynamic values in your UI.
+React re-renders the component every time you call the update function.
+You can use multiple state values in a single component.
+State makes your React components interactive and responsive.

@@ -1,0 +1,67 @@
+What You'll Learn:
+How to define and update state
+How to show or hide elements or components
+How to build a simple toggle feature
+
+
+Step-by-Step: Toggle Text Example
+import { useState } from "react";
+
+function App() {
+  const [display, setDisplay] = useState(true);
+
+  return (
+    <div>
+      <h1>Toggle in React JS</h1>
+      <button onClick={() => setDisplay(!display)}>Toggle</button>
+      {display ? <h1>Anil Sidhu</h1> : null}
+    </div>
+  );
+}
+
+export default App;
+
+
+Explanation:
+We import useState to handle the toggle.
+display is a boolean value (true or false).
+On button click, we change the value of display.
+The heading will be shown only if display is true.
+
+Toggle a Component (Hide/Show Component)
+Create a Component
+User.jsx
+
+function User() {
+  return (
+    <div>
+      <h1>User Component</h1>
+    </div>
+  );
+}
+
+export default User;
+
+
+Import & Use the Component in App.jsx
+import { useState } from "react";
+import User from "./User";
+
+function App() {
+  const [display, setDisplay] = useState(true);
+
+  return (
+    <div>
+      <h1>Toggle in React JS</h1>
+      <button onClick={() => setDisplay(!display)}>Toggle</button>
+      {display ? <User /> : null}
+    </div>
+  );
+}
+
+export default App;
+
+
+What’s Happening:
+User component is conditionally rendered using {display ? <User /> : null}.
+On clicking the Toggle button, the component appears or disappears.

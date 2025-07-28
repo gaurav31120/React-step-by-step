@@ -1,6 +1,7 @@
 import ClickEvent from "./ClickEventAndFunctionCall";
 import Counter from "./Components/Counter";
 import ElseIfConditional from "./Components/ElseIfConditional";
+import Props from "./Components/Props/Props";
 import Toggle from "./Components/Toggle";
 import Header from "./Header";
 import JsxInReact from "./JsxInReact";
@@ -61,7 +62,8 @@ function App() {
     {/* <State/> */}
     {/* <Counter/> */}
     {/* <Toggle /> */}
-    <ElseIfConditional />
+    {/* <ElseIfConditional /> */}
+    <Props />
     </div>
     
 

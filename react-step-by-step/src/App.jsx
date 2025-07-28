@@ -2,6 +2,7 @@ import ClickEvent from "./ClickEventAndFunctionCall";
 import AdvanceProps from "./Components/Advance Props/AdvanceProps";
 import Counter from "./Components/Counter";
 import ElseIfConditional from "./Components/ElseIfConditional";
+import InputField from "./Components/Input Field/createAnInputField";
 import Props from "./Components/Props/Props";
 import Toggle from "./Components/Toggle";
 import Header from "./Header";
@@ -65,7 +66,8 @@ function App() {
     {/* <Toggle /> */}
     {/* <ElseIfConditional /> */}
     {/* <Props /> */}
-    <AdvanceProps />
+    {/* <AdvanceProps /> */}
+    <InputField />
     </div>
     
 

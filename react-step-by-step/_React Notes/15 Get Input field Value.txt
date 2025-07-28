@@ -1,0 +1,62 @@
+15 Create an Input Field in React
+First, you need a simple input field. We’ll also use the useState hook to manage the value typed by the user.
+
+
+
+import { useState } from "react";
+
+function App() {
+  const [val, setVal] = useState("Anil Sidhu");
+
+  return (
+    <div>
+      <h1>Get Input Field Value</h1>
+      <input
+        type="text"
+        onChange={(event) => setVal(event.target.value)}
+        placeholder="Enter User Name"
+      />
+      <h1>{val}</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+We define a state variable val using useState.
+The onChange event captures user input and updates the state.
+event.target.value gives us the current value of the input.
+We display the current value in an <h1> element.
+
+
+How to Clear the Input Field
+To clear the field visually, we must make it a controlled component by adding the value attribute.
+
+
+
+import { useState } from "react";
+
+function App() {
+  const [val, setVal] = useState("Anil Sidhu");
+
+  return (
+    <div>
+      <h1>Get Input Field Value</h1>
+      <input
+        type="text"
+        value={val} // controlled input
+        onChange={(event) => setVal(event.target.value)}
+        placeholder="Enter User Name"
+      />
+      <h1>{val}</h1>
+      <button onClick={() => setVal("")}>Clear Value</button>
+    </div>
+  );
+}
+
+export default App;
+
+
+Use value={val}
+Without the value prop, the input field becomes uncontrolled, and React won't fully manage its value. Adding value={val} ensures the field reflects whatever is in the state — and when we call setVal(""), it resets the input to an empty string.

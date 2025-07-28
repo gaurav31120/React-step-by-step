@@ -1,4 +1,5 @@
 import ClickEvent from "./ClickEventAndFunctionCall";
+import Counter from "./Components/Counter";
 import Header from "./Header";
 import JsxInReact from "./JsxInReact";
 import State from "./State";
@@ -39,7 +40,8 @@ function App() {
   return (
     <>
     <div>
-    <State/>
+      <Counter/>
+    {/* <State/> */}
     {/* <ClickEvent/> */}
     {/* <h1>Jsx with curly braces</h1>
     <h1>{name?name:"user not found"}</h1>

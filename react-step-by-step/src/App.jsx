@@ -1,5 +1,6 @@
 import ClickEvent from "./ClickEventAndFunctionCall";
 import Counter from "./Components/Counter";
+import Toggle from "./Components/Toggle";
 import Header from "./Header";
 import JsxInReact from "./JsxInReact";
 import State from "./State";
@@ -40,9 +41,6 @@ function App() {
   return (
     <>
     <div>
-      <Counter/>
-    {/* <State/> */}
-    {/* <ClickEvent/> */}
     {/* <h1>Jsx with curly braces</h1>
     <h1>{name?name:"user not found"}</h1>
     <h1>{x+y}</h1>
@@ -58,6 +56,10 @@ function App() {
     <input type="test" value={name} />
     <br />
     <img src={path} /> */}
+    {/* <ClickEvent/> */}
+    {/* <State/> */}
+    {/* <Counter/> */}
+    <Toggle />
     </div>
     
 

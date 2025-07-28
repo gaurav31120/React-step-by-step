@@ -1,4 +1,5 @@
 import ClickEvent from "./ClickEventAndFunctionCall";
+import AdvanceProps from "./Components/Advance Props/AdvanceProps";
 import Counter from "./Components/Counter";
 import ElseIfConditional from "./Components/ElseIfConditional";
 import Props from "./Components/Props/Props";
@@ -63,7 +64,8 @@ function App() {
     {/* <Counter/> */}
     {/* <Toggle /> */}
     {/* <ElseIfConditional /> */}
-    <Props />
+    {/* <Props /> */}
+    <AdvanceProps />
     </div>
     
 

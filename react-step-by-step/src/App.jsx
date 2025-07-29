@@ -1,5 +1,6 @@
 import ClickEvent from "./ClickEventAndFunctionCall";
 import ControlledComponent from "./Components/16 Controlled Components/ControlledComponent";
+import HandleCheckbox from "./Components/17 Handle Checkbox/HandleCheckbox";
 import AdvanceProps from "./Components/Advance Props/AdvanceProps";
 import Counter from "./Components/Counter";
 import ElseIfConditional from "./Components/ElseIfConditional";
@@ -69,7 +70,8 @@ function App() {
     {/* <Props /> */}
     {/* <AdvanceProps /> */}
     {/* <InputField /> */}
-    <ControlledComponent />
+    {/* <ControlledComponent /> */}
+    <HandleCheckbox />
     </div>
     
 

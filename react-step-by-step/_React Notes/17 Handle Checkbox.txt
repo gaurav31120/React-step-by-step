@@ -1,0 +1,89 @@
+17 Handle Checkbox in React JS
+
+When you use an input field, you get a single string value. But with checkboxes, you may have multiple values.
+
+We need to store these values in an array using state. When a checkbox is unchecked, we must remove that value from the array.
+
+
+
+Create Skills.jsx
+function Skills() {
+  return (
+    <div>
+      <h2>Select Your Skills</h2>
+    </div>
+  );
+}
+
+export default Skills;
+Here we created a basic component called Skills and added an h2 heading. Then we exported the component to use it in App.jsx.
+
+
+
+Import and Use in App.jsx
+import Skills from "./Skills";
+
+function App() {
+  return (
+    <div>
+      <h1>Handle Checkbox in React JS</h1>
+      <Skills />
+    </div>
+  );
+}
+We import Skills and use it inside the App component.
+
+
+
+Add Checkboxes in Skills.jsx
+<input type="checkbox" id="php" value="php" />
+<label htmlFor="php">PHP</label>
+
+
+We use id and htmlFor to connect the label and input.
+value is the skill name we will collect when the checkbox is checked.
+
+
+Repeat for multiple skills:
+
+<input type="checkbox" id="js" value="js" />
+<label htmlFor="js">JS</label>
+<br /><br />
+
+<input type="checkbox" id="node" value="node" />
+<label htmlFor="node">Node</label>
+<br /><br />
+
+<input type="checkbox" id="java" value="java" />
+<label htmlFor="java">Java</label>
+
+
+Use State to Store Selected Skills
+const [skills, setSkills] = useState([]);
+We use useState to store selected checkbox values in an array called skills.
+
+
+
+Display selected skills:
+<h1>{skills.toString()}</h1>
+
+
+Create handleSkills() Function
+const handleSkills = (event) => {
+  console.log(event.target.value, event.target.checked);
+
+  if (event.target.checked) {
+    setSkills([...skills, event.target.value]);
+  } else {
+    setSkills(skills.filter((item) => item !== event.target.value));
+  }
+};
+
+
+Explanation:
+
+event.target.value: gets the value of the checkbox.
+event.target.checked: returns true or false.
+If checked, we add the value using the spread operator:
+setSkills([...skills, event.target.value])
+If unchecked, we remove the value using .filter().
